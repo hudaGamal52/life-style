@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description"
+    content="oin the strongest performing fitness franchise worldwide! With 22 locations nearby, and the #1 Rated Facility in all towns, we are the fastest-growing fitness family in this part of California. Anytime Fitness offers you a strong and stable career opportunity if you are willing to invest your life in people’s well-being!" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="man.css" />
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="man.js"></script>
+
+
+
+  <title>bright fitness</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="head" id="home">
+    <div class="cont">
+      <nav class="header-navigation" aria-label="navigation">
+        <div class="log"><span class="yellow">Bright</span>Fitness</div>
+        <ul>
+          <li>
+            <a href="home.html">Home</a>
+          </li>
+          <li>
+            <a href="women.html">For Women</a>
+          </li>
+          <li>
+            <a href="sportforman.html">For Men</a>
+          </li>
+          <li>
+            <a href="dite.html">Life Style</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="man">
+    <div class="background">
+      <img src="img/back.jpg" />
+    </div>
+
+    <!--trainers section start-->
+    <section class="trainers" id="trainer">
+      <h1 class="header">our trainers</h1>
+      <div class="items">
+        <div class="t">
+          <img class="img" src="img/t1.jpg" />
+          <div class="contint">
+
+            <div class="info">
+              <div id="courses1" class="cour">
+                <button id="t1" onclick="t1()" class="link-button">
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="t">
+          <img class="img" src="img/t2.jpg" />
+          <div class="contint">
+
+            <div class="info">
+              <div id="courses2" class="cour">
+                <button id="t2" onclick="t2()" class="link-button">
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="t">
+          <img class="img" src="img/t3.jpg" />
+          <div class="contint">
+
+            <div class="info">
+              <div id="courses3" class="cour">
+                <button id="t3" onclick="t3()" class="link-button">
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="t">
+          <img class="img" src="img/t4.jpg" />
+          <div class="contint">
+
+            <div class="info">
+              <div id="courses4" class="cour">
+                <button id="t4" onclick="t4()" class="link-button">
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--trainers section end-->
+
+    <!--calculate  section start-->
+    <section class="calculate-section">
+      <div class="calculate-continer">
+        <div class="calculate-contant">
+          <div class="title-section">
+            <h1 class="title-border">CALCULATE</h1>
+            <h1 class="title">YOUR BMI</h1>
+          </div>
+
+
+          <form action="" class="calculate-form" id="calculate-form">
+            <div class="calculate-box">
+              <input type="number" placeholder="height" class="calculate-input" id="calculate-cm" />
+              <label for="" class="calculate-lablel">cm</label>
+            </div>
+            <div class="calculate-box">
+              <input type="number" placeholder="weight" class="calculate-input" id="calculate-kg" />
+              <label for="" class="calculate-lablel" cm>kg</label>
+            </div>
+            <button id="calculate-buttom" onclick="calculatemessage()" type="submit">
+              Calculate Now
+            </button>
+          </form>
+        </div>
+        <p class="calculate-message" id="calculate-message"></p>
+      </div>
+    </section>
+    <!--calculate  section end-->
+  </div>
+  <!-- FOOTER -->
+  <footer class="section-footer" id="footer">
+    <div class="footer-box cont">
+      <div class="contact-details">
+        <h2><span class="yellow">Bright</span>Fitness</h2>
+
+        <ul class="contact-data">
+          <li class="location">100 Nallin Street, New Youk</li>
+          <li class="phone">+12 670 018 29</li>
+          <li class="email">BrightFitness@yahoo.com</li>
+          <li class="social">
+            <img src="logo-whatsapp.svg" alt="whatsapp icon" width="35" height="35" />
+
+            <img src="logo-facebook.svg" alt="facebook icon" width="35" height="35" />
+
+            <img src="logo-instagram.svg" alt="instagram icon" width="35" height="35" />
+
+            <img src="logo-twitter.svg" alt="twitter icon" width="35" height="35" />
+          </li>
+        </ul>
+      </div>
+
+      <nav class="footer-nav" aria-label="navigation">
+        <div class="nav-name">Quick Links</div>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="women.html">For Women</a></li>
+          <li><a href="sportforman.html">For Men</a></li>
+          <li><a href="dite.html">Life Style</a></li>
+        </ul>
+      </nav>
+
+  </footer>
+</body>
+
+</html>

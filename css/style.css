@@ -1,0 +1,280 @@
+/* Start Variables */
+
+:root {
+  --main-color: #10cab7;
+  --secondary-color: #2c4755;
+  --section-padding: 60px;
+  --section-background: #f6f6f6;
+  --main-duration: 0.5s;
+  --color-yellow: hsl(56, 99%, 52%);
+}
+
+/* End Variables */
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+.cont {
+  max-width: clamp(50rem, 85vw, 114rem);
+  padding: 0 2.4rem;
+  margin: 0 auto;
+}
+
+.header-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 0;
+}
+
+.head {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  width: 100%;
+  z-index: 100;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
+}
+
+.header-navigation ul {
+  display: flex;
+  text-transform: capitalize;
+  font-size: 1.7rem;
+  list-style: none;
+  font-weight: 700;
+}
+
+.header-navigation ul li {
+  padding-left: 2.8rem;
+}
+
+.header-navigation ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 1.8rem 0;
+  border-bottom: 2px solid transparent;
+  transition: border 0.5s;
+}
+
+.header-navigation ul li a:hover {
+  border-bottom: 2px solid var(--color-yellow);
+}
+
+.header-navigation .log {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.yellow {
+  color: var(--color-yellow);
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* End Global Rules */
+/*start header*/
+/*start header*/
+.header {
+  background-color: white;
+  position: relative;
+  box-shadow: 0 0 10px #ddd;
+  -webkit-box-shadow: 0 0 10px #ddd;
+  -moz-box-shadow: 0 0 10px #ddd;
+
+  box-shadow: 0 0 10px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+
+}
+
+.header .logo {
+
+  color: var(--main-color);
+  font-size: 26px;
+  font-weight: bold;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+@media (max-width:767) {
+  .header .logo {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+.header .main-nav {
+  display: flex;
+  margin: auto;
+
+}
+
+@media (max-width:767) {
+  .header .main-nav {
+    margin: auto;
+  }
+}
+
+.header .main-nav>li>a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 72px;
+  position: relative;
+  color: black;
+  padding: 0 30px;
+  transition: var(--main-transition);
+  overflow: hidden;
+
+
+}
+
+@media (max-width:767) {
+  .header .main-nav>li>a {
+    padding: 10px;
+    font-size: 14px;
+    height: 40px;
+  }
+}
+
+.header.main-nav>li>a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: var(--main-color);
+  top: 0;
+  left: -100%;
+  transition: var(--main-transition);
+}
+
+.header .main-nav>li>a:hover {
+  color: var(--main-color);
+  background-color: #fafafa;
+}
+
+
+.header .main-nav>li>a:hover::before {
+  left: 0;
+}
+
+/*start landing*/
+.landing {
+  background-image: url(../images/organic-vegetables-cooking-healthy-lifestyle-260nw-1900422121.webp);
+  background-size: cover;
+  height: calc(100vh - 64px);
+  position: relative;
+}
+
+.landing .intro-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  max-width: 100%;
+}
+
+.landing .intro-text h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 50px;
+  color: var(--main-color);
+}
+
+.landing .intro-text p {
+  font-size: 19px;
+  line-height: 1.8;
+  color: black;
+}
+
+/* End Landing Section */
+.features {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--section-background);
+}
+
+.features .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.features .feat {
+  padding: 20px;
+  text-align: center;
+}
+
+.features .feat i {
+  color: var(--main-color);
+}
+
+.features .feat h3 {
+  color: black;
+  font-weight: 800;
+  margin: 30px 0;
+
+}
+
+.features .feat p {
+  line-height: 1.8;
+  color: black;
+  font-size: 17px;
+
+}
+
+.features .feat a {
+  margin: 50px 0 0 0;
+}
+
+/* End Features */
